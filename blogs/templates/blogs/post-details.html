@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title%}This Post Title{% endblock %}
+
+{% block css-files %}
+    <link rel="stylesheet" href="{% static 'blogs/post-details.css' %}">
+    {% endblock%}
+
+{% block body-content %}
+<section id="summary">
+<h2>{{post.title}}</h2>
+<article>
+    <img src="{% static 'blogs/images/'|add:post.image %}" alt="{{post.title}}">
+    <address>
+       By {{post.author}}
+      
+    </address>
+    <div>
+        <time>Last update on {{ post.date|date:"D d M Y" }}</time>
+     
+    </div>
+</article>
+
+</section>
+
+<main>
+    <p>{{post.content|linebreaks}}</p>
+</main>
+    
+    
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+{% block footer-content %}
+    <section id="footer">
+        Agalo Simon &copy 2021  
+    </section>
+    {% endblock %}  

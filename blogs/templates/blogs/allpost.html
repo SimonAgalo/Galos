@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title%}All My Posts{% endblock %}
+
+{% block css-files %}
+<link rel="stylesheet" href="{% static 'blogs/post.css' %}">
+<link rel="stylesheet" href="{% static 'blogs/allpost.css' %}">
+{% endblock%}
+
+{% block body-content%}
+<section id="all-post">
+    <h2>My collected posts</h2>
+    <ul>
+        {% for post in all_posts %}
+        {% include 'blogs/includes/post.html' %}
+         {% endfor %}
+        
+    </ul>
+</section>
+
+{% endblock%}
+
+
+{% block footer-content %}
+    <section id="footer">
+        Agalo Simon &copy 2021  
+    </section>
+{% endblock %}  
+
+   
+

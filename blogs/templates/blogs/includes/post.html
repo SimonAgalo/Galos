@@ -1,0 +1,22 @@
+{% load static %}
+
+<li>
+    <article class="post">
+        <a href="{% url 'post-details-page' post.slug %}">
+            <img src="{% static 'blogs/images/'|add:post.image %}" alt="{{post.title}}">
+            <div class="post__content"> 
+                <h3>{{post.title}}</h3>
+                <p>
+                    {{post.excerpt}}
+                </p>
+            </div>
+        </a>
+    </article>
+</li>
+
+
+{% block footer-content %}
+    <section id="footer">
+        Agalo Simon &copy 2021  
+    </section>
+{% endblock %}  

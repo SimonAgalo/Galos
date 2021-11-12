@@ -1,0 +1,120 @@
+/* garabient.com : site for gradiuent colors */
+
+#welcome{
+    background: linear-gradient(to right top , #6305dd, #390281);
+    border-radius: 8px;
+}
+
+#welcome header{
+    display: flex;
+    align-items: flex-start;
+    margin: 3rem auto;
+    
+    
+}
+#welcome h2{
+    font-size: 3.5rem;
+    margin: 0,0,0,2rem;
+    width: 10rem;
+    color: #e4e4e4;
+    
+    
+}
+
+#welcome p{
+    font-size: 1.5rem;
+    color: white;
+       
+}
+
+#welcome img{ 
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    align-items: center;
+    justify-self:center;
+    object-position: top;
+    border: 5px solid white;
+    border-radius: 12px;
+    background-color: #ffe1bf;
+    transform: rotateZ(-5deg);
+    box-shadow: 0 0px 8px rgba(0,0,0,0.25);
+}
+
+#latest-post{
+    background-color: #f3f0f0;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 60rem;
+    margin: -1rem auto 2rem auto;
+    box-shadow: 1px 1px 12px rgba(0,0,0, 0.4);
+
+}
+#latest-post h2{
+        text-align: center;
+}
+
+#latest-post ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    border-radius: 15px;
+    font-family: 'Open Sans','Lato', sans-serif;
+    
+   
+}
+
+#latest-post li{
+    flex: 1;
+}
+
+
+#about{
+    text-align: center;
+    padding: 3rem;
+    background-color: #e48900;
+    margin-top: 5rem;
+    border-radius: 8px;
+
+}
+
+#about h2{
+    font-size: 3rem;
+    text-decoration: underline;
+
+}
+
+#about p{
+    font-size: 1.5rem;
+    color:#353535;
+    font-family: 'Open Sans','Lato', sans-serif;;
+}
+
+#about img{ 
+    width: 20rem;
+    height: 20rem;
+    object-fit:fill;
+    justify-self:center;
+    border: 5px solid rgb(248, 247, 250);
+    border-radius: 12px;
+    transform: rotatey(-4deg);
+    box-shadow: 0 0px 8px rgba(32, 20, 20, 0.25);
+}
+
+ 
+
+#footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(95, 14, 32);
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+  }
+
+
+  

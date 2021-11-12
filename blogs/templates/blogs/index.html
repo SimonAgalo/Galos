@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+    {% block css-files %}
+    <link rel="stylesheet" href="{% static 'blogs/post.css' %}">
+    <link rel="stylesheet" href="{% static 'blogs/index.css' %}">
+    {% endblock%}
+    {% block title%}{{posts.title}}{% endblock %}
+
+    {% block body-content %}
+
+    <section id="welcome">
+        <header>
+            <img src="{% static 'blogs/images/agal.png' %}" alt="Agalo the owner of the blog" width="400" height="450"> 
+            <h2>AGALO'S BLOG</h2>
+
+        </header>
+        <P>Hi I'm Agalo Simon I love Technology</P>
+        
+    </section>
+
+    <section id="latest-post">
+        <h2>My latest thoughts</h2>
+
+        <ul>
+            {% for post in posts %}
+            {% include 'blogs/includes/post.html' %}
+            {% endfor%}
+        </ul>
+
+    </section>
+
+    <section id="about">
+        <h2>What I Do</h2>
+        <img src="{% static 'blogs/images/code.jpeg' %}" alt="Laptop for programming">
+        <p>
+            I love programming, I love to help others and I enjoy exploring new technologies in general.
+            <p>
+                My goal is to keep to growth as a developer and if I could help you do the same, I will be happy.
+            </p>
+        </p>
+        <P><a href="https://www.whatsapp.com/" target="_blank">Whatsapp</a></P>
+    
+    </section>
+    
+    {% endblock %}
+
+
+    {% block footer-content %}
+    <section id="footer">
+        Agalo Simon &copy 2021  
+    </section>
+    {% endblock %}  
