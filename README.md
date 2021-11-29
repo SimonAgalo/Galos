@@ -1,0 +1,2 @@
+# Galos
+My personal blog
